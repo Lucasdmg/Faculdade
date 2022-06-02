@@ -5,7 +5,7 @@ cont3=0
 while True:
     print("*-"* 10)
     a=int(input("Rafa joga >> " ))
-    b=int(input("Pedro joga >> " ))
+    b=int(input("Helena joga >> " ))
     c=int(input("Lucas joga >> " ))
     if a == b == c:
         print(f"Empate !!! ")
@@ -14,12 +14,12 @@ while True:
         print("Lucas Ganhou")
         cont1 += 1
     if a == c or c == a:
-        print("Pedro Ganhou")
+        print("Helena Ganhou")
         cont2 += 1
     if b == c or c == b:
         print("Rafa Ganhou")
         cont3 += 1
-    print(f"PLACAR >> Rafa {cont3} - Pedro {cont2} - Lucas {cont1} << ")
+    print(f"PLACAR >> Rafa {cont3} - Helena {cont2} - Lucas {cont1} << ")
     if cont1 == cont2 == cont3:
         print("EMPATEEE")
         break
@@ -27,7 +27,7 @@ while True:
         print("Lucas Venceu o Jogo!!! ")
         break
     if cont2 > 2:
-        print(" Pedro Venceu o Jogo !!! ")
+        print(" Helena Venceu o Jogo !!! ")
         break
     if cont3 > 2:
         print("Rafa Venceu o jogo !!! ")
